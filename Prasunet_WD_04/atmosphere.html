@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+
+    <style>
+        .container {
+            position: absolute;
+            left: 25%;
+            right: 30%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border: 2px solid brown;
+            width: 800px;
+            height: 550px;
+            padding: 15px;
+        }
+
+        .butt {
+            position: absolute;
+            top: 215px;
+            right: 40%;
+            background-image: url("https://cdn.icon-icons.com/icons2/1674/PNG/512/radiobuttonon_110976.png");
+            background-size: cover;
+            height: 20px;
+            width: 20px;
+            border-style: hidden;
+            
+            
+        }
+
+        .butt1 {
+            position: absolute;
+            bottom: 108px;
+            right: 40%;
+            background-image: url("https://cdn.icon-icons.com/icons2/1674/PNG/512/radiobuttonon_110976.png");
+            background-size: cover;
+            height: 20px;
+            width: 20px;
+            border-style: hidden;
+        }
+
+        .butt2{
+            position: absolute;
+            top:125px;
+            right: 40%;
+            background-image: url("https://cdn.icon-icons.com/icons2/1674/PNG/512/radiobuttonon_110976.png");
+            background-size: cover;
+            height: 20px;
+            width: 20px;
+            border-style: hidden;
+        }
+
+        .butt3 {
+            position: absolute;
+            bottom: 250px;
+            right: 40%;
+            background-image: url("https://cdn.icon-icons.com/icons2/1674/PNG/512/radiobuttonon_110976.png");
+            background-size: cover;
+            height: 20px;
+            width: 20px;
+            border-style: hidden;
+        }
+
+        .butt4 {
+            position: absolute;
+            bottom: 180px;
+            right: 40%;
+            background-image: url("https://cdn.icon-icons.com/icons2/1674/PNG/512/radiobuttonon_110976.png");
+            background-size: cover;
+            height: 20px;
+            width: 20px;
+            border-style: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 550px;
+        }
+
+        button {
+            border-radius: 50%;
+        }
+
+        h1 {
+            border-radius: 15px;
+            background-color:  #29AB87;
+            color: #F1FFFA;
+            width: auto;
+            position: relative;
+            text-align: center;
+            font-family:monospace;
+            font-size: 30px;
+            font-weight: bolder;
+            border: solid 2px rgb(9, 9, 40);
+            padding: 5px;
+            
+        }
+
+        .popup{
+            display: none;
+            position: absolute;
+            font-size: 20px;
+            width: 200px;
+            height:30px;
+            transform: translate(300px,30px );
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding:5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            overflow: hidden;
+           margin-bottom: 30px;
+        }
+        
+        .popup:hover{
+        width: 550px;
+        height:380px;
+        border:solid 6px #36291e;
+        border-top-left-radius: 15px;
+        font-size: 18px;
+        background-color: #ffffff;
+        color: #000;
+        transform: translate(100px,-250px);
+       transition: 2s;
+       overflow: hidden;
+       
+    }
+
+    .popup:hover p{
+        font-family: monospace;
+    }
+
+    .popup li{
+            font-family: monospace;
+        }
+
+        .poop{
+            display: none;
+            position: absolute;
+            font-size: 20px;
+            width: 200px;
+            height:30px;
+            transform: translate(300px,30px );
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding:5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            overflow: hidden;
+           margin-bottom: 30px;
+        }
+        
+        .poop:hover{
+        width: 550px;
+        height:380px;
+        border:solid 6px #36291e;
+        border-top-left-radius: 15px;
+        font-size: 18px;
+        background-color: #ffffff;
+        color: #000;
+        transform: translate(100px,-250px);
+       transition: 2s;
+       overflow: hidden;
+       
+    }
+
+    .poop:hover p{
+        font-family: monospace;
+    }
+
+    .poop li{
+            font-family: monospace;
+        }
+    
+        .poop1 {
+            display: none;
+            position: absolute;
+            font-size: 20px;
+            width: 200px;
+            height:30px;
+            transform: translate(300px,30px );
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding:5px;
+            padding-top: 5px;
+            background-color: #000000;
+            color: #ffffff;
+            overflow: hidden;
+           margin-bottom: 30px;
+        }
+        
+        .poop1:hover{
+        width: 550px;
+        height:380px;
+        border:solid 6px #36291e;
+        border-top-left-radius: 15px;
+        font-size: 18px;
+        background-color: #ffffff;
+        color: #000;
+        transform: translate(100px,-250px);
+       transition: 2s;
+       overflow: hidden;
+       
+    }
+
+    .poop1:hover p{
+        font-family: monospace;
+    }
+
+    .poop1 li{
+            font-family: monospace;
+        }
+
+        .poop2{
+            display: none;
+            position: absolute;
+            font-size: 20px;
+            width: 200px;
+            height:30px;
+            transform: translate(300px,30px );
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding:5px;
+            padding-top: 5px;
+            background-color: #000000;
+            color: #ffffff;
+            overflow: hidden;
+           margin-bottom: 30px;
+        }
+        
+        .poop2:hover{
+        width: 550px;
+        height:380px;
+        border:solid 6px #36291e;
+        border-top-left-radius: 15px;
+        font-size: 18px;
+        background-color: #ffffff;
+        color: #000;
+        transform: translate(100px,-250px);
+       transition: 2s;
+       overflow: hidden;
+       
+    }
+
+    .poop2:hover p{
+        font-family: monospace;
+    }
+
+    .poop2 li{
+            font-family: monospace;
+        }
+
+
+        .poop3 {
+            display: none;
+            position: absolute;
+            font-size: 20px;
+            width: 200px;
+            height:30px;
+            transform: translate(300px,30px );
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding:5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            overflow: hidden;
+           margin-bottom: 30px;
+        }
+        
+        .poop3:hover{
+        width: 550px;
+        height:380px;
+        border:solid 6px #36291e;
+        border-top-left-radius: 15px;
+        font-size: 18px;
+        background-color: #ffffff;
+        color: #000;
+        transform: translate(100px,-250px);
+       transition: 2s;
+       overflow: hidden;
+       
+    }
+
+    .poop3:hover p{
+        font-family: monospace;
+    }
+
+    .poop3 li{
+            font-family: monospace;
+        }
+
+    body{
+    height: auto;
+    background-color:  #f7f2f3;    
+
+    }
+        
+        .para{
+            width: auto;
+            height: 100%;
+            padding:10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: 15px;
+            border: solid black 2px;
+            border-radius: 15px;
+            border-style: hidden;
+            /*background-color:  #F1EDEE;*/
+            font: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+
+        }
+
+        li strong{
+            text-decoration-line: underline;
+        }
+        p em{
+            font-size: 18px;
+        }
+
+        .quiz{
+            position: absolute;
+            top: 100%;
+            border: solid 2px black;
+            
+            
+            height: 50px;
+           
+            margin: 15px;
+            border-radius: 15px;
+            width: 800px;
+            transform: translate(-20px,130px);
+            text-align: center;
+        }
+   
+        .quiz h{
+            font-size: 35px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+           text-align: center;
+        }
+
+       
+
+        .conclusion{
+            position: absolute;
+            top: 120%;
+            left: auto;
+            border: solid 2px black;
+            border-style: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            width: 1350px;
+            margin: 15px;
+            padding: 15px;
+            transform: translate(-335px,50px);
+            border-radius: 15px;
+           
+        }
+
+        .quiz a{
+            display: inline;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+<h1>Earth's Atmosphere</h1>
+
+<div class="para">
+    <p> <em><strong>Atmosphere</strong></em> refers to the gaseous envelope surrounding a celestial body, such as a planet or a moon, held in place by gravity. It's composed mainly of nitrogen (about 78%) and oxygen (about 21%), with trace amounts of other gases like argon, carbon dioxide, and water vapor.<br> <br>
+        This layer of gases is held in place by gravity and serves several critical functions, including shielding the planet from harmful solar radiation, regulating temperature through the greenhouse effect, driving weather patterns, and providing the essential gases needed for life to thrive.<br><br>
+        Understanding the composition and dynamics of the atmosphere is crucial for studying climate, weather, and environmental processes on Earth and other celestial bodies.<br><br>
+        Here are the key functions of Earth's atmosphere in simple points:
+           
+            <li> <strong>Protection: </strong>Shields the Earth from harmful solar radiation, including UV rays.</li>
+        
+            <li><strong>Temperature Regulation:</strong> Helps maintain stable temperatures through the greenhouse effect.</li>
+        
+                <li><strong>Weather Formation: </strong>Drives weather patterns, including precipitation, winds, and storms.</li>
+        
+                    <li><strong>Breathable Air:</strong> Provides oxygen essential for respiration and life on Earth.</li>
+        
+                        <li><strong>Astronomical Impact: </strong>Affects visibility and clarity for astronomical observations.</li>
+    
+    
+    </p>
+</div>
+
+<div class="container">
+    <img src="image1.jpg">
+    
+    <button class="butt" onclick="togglePopup('popup1')"></button>
+    <button class="butt1" onclick="togglePopup('pop')"></button>
+    <button class="butt2" onclick="togglePopup('pop2')"></button>
+    <button class="butt3" onclick="togglePopup('pop3')"></button>
+    <button class="butt4" onclick="togglePopup('pop4')"></button>
+    
+    
+       <div class="popup" id="popup1">This is <strong>Thermosphere</strong><br><br><p>The thermosphere is the layer of the Earth's atmosphere located above the mesosphere and below the exosphere.
+        <li>    It extends from about 85 kilometers (53 miles) to 600 kilometers (373 miles) above the Earth's surface.</li>
+        <li>Temperature in the thermosphere increase with altitude due to the absorption of solar radiation.</li>
+        <li>    The thermosphere is where the International Space Station (ISS) and many other satellites orbit the Earth.</li>
+        <li>    It plays a significant role in transmitting radio signals and hosting the auroras (Northern and Southern Lights) at its higher altitudes.</li></p></div>
+
+       <div class="poop" id="pop">This is <strong>Toposphere</strong><br><br><p>The troposphere is the lowest layer of the Earth's atmosphere, extending from the Earth's surface to about 8-15 kilometers (5-9 miles) above sea level.
+           <li>   It is where weather events, such as clouds, rain, and storms, occur.</li>
+           <li>   Temperature decreases with altitude in the troposphere, making it the coldest layer of the atmosphere at higher altitudes.</li>
+          <li>    The majority of the Earth's atmospheric mass and almost all of its water vapor are found in the troposphere.</li>
+           <li>   It contains the air we breathe and supports life on Earth.</li></p></div>
+    
+        <div class="poop1" id="pop2">This is <strong>Exosphere</strong><br><br><p>The exosphere is the outermost layer of the Earth's atmosphere, extending from the top of the thermosphere to space.
+           <li>    It is composed of extremely low-density gases, such as hydrogen and helium, and extends thousands of kilometers into space.</li>
+           <li>    The exosphere gradually transitions into the vacuum of outer space and contains very few molecules.</li>
+            <li>   Satellites and space stations orbit within the exosphere, experiencing minimal atmospheric drag.</li>
+            <li>   It serves as the boundary between the Earth's atmosphere and outer space.</li></p></div>
+
+       <div class="poop2" id="pop3">This is <strong>Mesosphere</strong><br><br><p>The mesosphere is the layer of the Earth's atmosphere located above the stratosphere and below the thermosphere.
+        <li>    It extends from about 50 kilometers (31 miles) to 85 kilometers (53 miles) above the Earth's surface.</li>
+        <li>    Temperatures in the mesosphere decrease with altitude, reaching their lowest point near the mesopause.</li>
+       <li>     The mesosphere is where most meteors burn up upon entry into the Earth's atmosphere, creating shooting stars.</li>
+       <li>     It plays a crucial role in protecting the Earth from incoming meteoroids and space debris.</li></p></div>
+    
+       <div class="poop3" id="pop4"> This is <strong> Stratosphere</strong><br><br><p>The stratosphere is the layer of the Earth's atmosphere located above the troposphere and below the mesosphere.
+<li> It extends from about 15 kilometers (9 miles) to 50 kilometers (31 miles) above the Earth's surface.</li>
+<li> Temperatures in the stratosphere increase with altitude due to the presence of the ozone layer, which absorbs and scatters ultraviolet (UV) radiation from the Sun.</li>
+<li> Commercial jet aircraft fly within the lower stratosphere to take advantage of its stability and reduced turbulence.</li>
+<li> The stratosphere plays a crucial role in protecting life on Earth by absorbing harmful UV radiation and regulating the climate.</li></p></div>
+
+<!--<div class="conclusion" style=" text-align: center;">
+    <p>In conclusion, Earth's atmosphere is a complex and dynamic system that plays a fundamental role in supporting life and shaping our planet's climate and weather patterns. Composed of several distinct layers - the troposphere, stratosphere, mesosphere, thermosphere, and exosphere - each with unique characteristics and functions, the atmosphere acts as a protective shield, regulating temperature, distributing heat, and filtering harmful radiation from the Sun.<br>
+
+        Moreover, the atmosphere facilitates essential processes such as photosynthesis, respiration, and the water cycle, making life sustainable on Earth. Its interactions with the oceans, landmasses, and biosphere create a delicate balance that influences global climate patterns and weather phenomena.<br>
+        
+        Understanding the complexities of Earth's atmosphere is vital for addressing environmental challenges, studying climate change, and developing strategies for sustainable living. As stewards of our planet, it is imperative that we continue to explore, monitor, and protect this precious resource to ensure the well-being of current and future generations.<br></p>
+</div>-->
+
+</div>
+
+
+<script>
+    function togglePopup(popupId) {
+        var popup = document.getElementById(popupId);
+        var popups = document.querySelectorAll('.popup, .poop, .poop1, .poop2, .poop3');
+        
+        // Hide all popups
+        popups.forEach(function(popup) {
+            popup.style.display = 'none';
+        });
+        
+        // Show the clicked popup
+        popup.style.display = 'block';
+
+        popup.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+</script>
+
+</body>
+</html>
